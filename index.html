@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <title>Capital Quizz with Semantic</title>
+</head>
+<body>
+    
+    <div class="container">
+    
+        <h1 class="ui center aligned header">Quizz des Capitales du monde</h1>
+
+        <div class="ui two column stackable grid">
+            <div class="column">
+                <div class="ui mini horizontal statistic">
+                    <div class="value good">
+                        0
+                    </div>
+                    <span style="margin: 10px;"> / </span>
+                    <div class="value total">
+                        1
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="ui two column stackable grid">
+            <div class="column">
+                <h3 id="question">Quelle est la capitale du <bold class="pays"></bold> ? </h3>
+
+                <form class="formulaire">
+                    <div id="reponse" class="ui form">
+                        <div class="inline fields">
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input class="inputValue" type="radio" value="" name="frequency">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input class="inputValue" type="radio" value="" name="frequency">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input class="inputValue" type="radio" value="" name="frequency">
+                                    <label></label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <div class="ui radio checkbox">
+                                    <input class="inputValue" type="radio" value="" name="frequency">
+                                    <label></label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ui message dimmer">
+                        <i class="close icon"></i>
+                            <div class="header">
+                                Bonne réponse !
+                            </div>
+                    </div>
+
+                    <button type="submit" id="btnCheckAnswer" class="button ui primary">Valider</button>
+                    <button id="nextQuestion" class="button ui primary dimmer">Question suivante</button>
+                </form>
+            </div>
+
+
+
+
+            <div class="column">
+                <div class="ui card">
+                    <div class="image">
+                        <img src="image.png">
+                    </div>
+                    <div class="content">
+                        <h4 class="header-country"></h4>
+                        <div class="meta">
+                        <span><em class="subregion"></em></span>
+                        </div>
+                        <div class="description">
+                            <p><strong>Capitale : </strong><span class="capitale"></span></p>
+                            <p><strong>Habitants : </strong><span class="habitants"></span></p>
+                            <p><strong>Monnaie : </strong><span class="monnaie"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

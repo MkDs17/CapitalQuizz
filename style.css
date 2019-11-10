@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( rgba(255, 255, 255, .9), rgba(255, 255, 255, 0.7) ), url(bg.jpg) no-repeat center center fixed !important;
+}
+
+.column {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ui.card>.image>img, .ui.cards>.card>.image>img {
+    height: 193px !important;
+    width: 290px !important;
+}
