@@ -1,5 +1,7 @@
 # CapitalQuizz
 
+![alt ceci est un text alternatif](capital-quizz.gif)
+
 ### Création d'un quizz sur les capitales du monde, 
 
 
