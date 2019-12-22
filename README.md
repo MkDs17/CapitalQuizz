@@ -15,7 +15,7 @@
 
 * Utilisation d'une API publique (pour les requêtes AJax) accessible à l'adresse [https://restcountries.eu/rest/v2/all](https://restcountries.eu/rest/v2/all), qui renvoit un fichier json contenant avec un tableau d'objets de cette forme (exemple pour le pays "FRANCE") :
 
-```Json
+```javascript
 {
 name: "France",
 topLevelDomain: [
