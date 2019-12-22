@@ -3,7 +3,6 @@ let app = {
   counterGoodAnswer: 0,
 
   init: function() {
-    console.log('init')
     app.loadData()
 
     $('#btnCheckAnswer').on('click', app.checkAnswer)
@@ -21,8 +20,8 @@ let app = {
   countPoint: function() {
     $('.good').text(app.counterGoodAnswer)
     $('.total').text(app.counterQuestion)
-    console.log(app.counterQuestion)
-    console.log(app.counterGoodAnswer)
+    /* console.log(app.counterQuestion)
+    console.log(app.counterGoodAnswer) */
   },
 
   addPoint: function() {
@@ -30,7 +29,6 @@ let app = {
   },
   
   loadData: function() {
-
     $countryName = []
     $countryCapital = []
     $countryNumber = []
@@ -51,8 +49,7 @@ let app = {
       function(response) 
       {
       res = response
-      console.log(res)
-  
+        
       $.each(res, function(i, country) 
         {
           $countryName.push(country.translations.fr)
@@ -69,10 +66,10 @@ let app = {
         for (i = 0; i < 3; i++) {
           app.randomNumber(0, $countryNumber.length)
           badAnswers.push($countryCapital[randNumb]);
-          console.log(randNumb)
+          /* console.log(randNumb) */
         }
         
-        console.log(badAnswers)
+        /* console.log(badAnswers) */
 
         //generer un nombre aléatoire qui va chercher dans l'array, un pays et une capital liée, ainsi que les 3 mauvaises réponses
         app.randomNumber(0, $countryNumber.length--)
@@ -89,7 +86,6 @@ let app = {
   },
 
   generateTheQuestion: function(countryName, capitalName, badAnswers) {
-
     $('.pays').text(countryName)
 
     // Reset les class One, Two, Three, Four ajouter au tour précédent
@@ -128,6 +124,7 @@ let app = {
       $('#nextQuestion').removeClass('dimmer')
 
       app.addPoint()
+      
     } else 
     {
       $('.message').removeClass('dimmer')
@@ -144,10 +141,8 @@ let app = {
     $('.meta').find('.subregion').text($countrySubregion[randNumb])
     $('.card').find('.capitale').text($countryCapital[randNumb])
     $('.card').find('.habitants').text($countryPopulation[randNumb].toLocaleString())
-    $('.card').find('.monnaie').text($countryCurrencies[randNumb][0]['name'] + ' - ' + $countryCurrencies[randNumb][0]['symbol'])
-    
-    
-    
+    $('.card').find('.monnaie').text($countryCurrencies[randNumb][0]['name'] + ' - ' + $countryCurrencies[randNumb][0]['symbol'])     
+
   },
 
   hideValidationMessage: function(){
@@ -166,9 +161,9 @@ let app = {
     app.loadData()
   },
 
-  test: function() {
+  /* test: function() {
     console.log('test ok')
-  }
+  } */
 
 };
 $(app.init);
