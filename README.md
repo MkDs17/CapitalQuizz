@@ -2,6 +2,9 @@
 
 ![alt ceci est un text alternatif](capital-quizz.gif)
 
+[Click Here to view more](http://15.188.76.189/side/CapitalQuizz/)
+
+
 ### Création d'un quizz sur les capitales du monde, 
 
 
