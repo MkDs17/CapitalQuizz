@@ -41,7 +41,7 @@ let app = {
 
     $.ajax(
       {
-        url: 'https://restcountries.eu/rest/v2/all',
+        url: 'https://restcountries.eu/rest/v3.1/all',
         method: 'GET',
         dataType: 'json'
       }
